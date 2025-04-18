@@ -16,17 +16,24 @@
     "amp.js"
   ],
   "scripts": {
-    "build": "taskr",
-    "release": "taskr release",
-    "prepublish": "npm run release",
+    "build": "node build-next-server.js",
     "typescript": "tsc --noEmit"
   },
-  "taskr": {
-    "requires": [
-      "./taskfile-typescript.js"
-    ]
-  },
+ 
   "dependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "7.1.2",
+    "@babel/plugin-proposal-class-properties": "7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "7.0.0",
+    "@babel/plugin-transform-modules-commonjs": "7.1.0",
+    "@babel/plugin-transform-runtime": "7.1.0",
+    "@babel/preset-env": "7.1.0",
+    "@babel/preset-react": "7.0.0",
+    "@babel/runtime": "7.1.2",
+    "@babel/runtime-corejs2": "7.1.2",
+    "@babel/parser": "7.2.0",
+    "@babel/preset-typescript": "7.3.3",
     "amp-toolbox-optimizer": "0.5.2-beta.6",
     "etag": "1.8.1",
     "find-up": "3.0.0",
@@ -43,13 +50,11 @@
     "react-dom": "^16.6.0"
   },
   "devDependencies": {
-    "@taskr/clear": "1.1.0",
-    "@taskr/watch": "1.1.0",
+ 
     "@types/react": "16.8.4",
     "@types/react-dom": "16.8.2",
     "@types/react-is": "16.5.0",
-    "@types/send": "0.14.4",
-    "taskr": "1.1.0",
+    "@types/send": "0.14.4", 
     "typescript": "3.1.6"
   },
   "engines": {
