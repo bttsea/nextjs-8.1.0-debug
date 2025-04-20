@@ -2,7 +2,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const filesToCopy = ['amp.js','app.js', 'babel.js','client.js', 'config.js', 'constants.js', 'data.js', 'document.js', 'dynamic.js', 'error.js', 'head.js', 'link.js', 'router.js' ];
+const filesToCopy = ['amp.js','app.js',  'client.js', 'config.js', 'constants.js', 'data.js', 'document.js', 'dynamic.js', 'error.js', 'head.js', 'link.js', 'router.js' ];
 const srcDir = path.join(__dirname, '..');
 const outDir = path.join(__dirname, '..', 'dist');
 
